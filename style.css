@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  height: 720px;
 }
 
 .container {
@@ -8,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 720px;
+  height: auto;
   background-image: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -79,10 +80,10 @@ button {
   box-shadow: black 2px 5px 15px;
 }
 
-button:hover{
-    background-color: #E880E7;
-    cursor: pointer;
-    color: white;
+button:hover {
+  background-color: #e880e7;
+  cursor: pointer;
+  color: white;
 }
 
 footer {
@@ -118,13 +119,76 @@ footer {
   margin: 4px;
 }
 
-.icons:hover{
-    background-color: #E880E7;
-    cursor: pointer;
-    color: white;
-    border: #E880E7 solid 1px;
+.icons:hover {
+  background-color: #e880e7;
+  cursor: pointer;
+  color: white;
+  border: #e880e7 solid 1px;
 }
 
 .footer-text {
   margin-left: -180px;
+}
+
+@media screen and (max-width: 1349px) {
+  body {
+    height: 700px;
+  }
+
+  .container {
+    height: auto;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    margin-top: 70px;
+    gap: 5px;
+  }
+
+  #hero-image {
+    width: 400px;
+  }
+  .second {
+    width: 80%;
+  }
+  .width {
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  button {
+    padding: 15px 10px;
+    border-radius: 10px;
+    color: #674bb0;
+    border: none white;
+    align-self: center;
+    text-align: center;
+    margin-left: -15px;
+    width: 150px;
+    box-shadow: black 2px 5px 15px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-text {
+    margin-left: 0px;
+  }
+
+  .section-icon {
+    align-items: center;
+    margin-left: -40px;
+    gap: 20px;
+  }
 }
